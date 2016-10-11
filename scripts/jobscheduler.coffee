@@ -14,4 +14,14 @@ module.exports = (robot) ->
         msg.send "OK: start job #{jobname}"
       else
         msg.send "Error: #{result.answer.ERROR.$.text}"
+  robot.respond /start jobchain (\S*)/i, (msg) ->
+    jobchainname = msg.match[1]
+    msg.send "Starting #{jobchainname}"
+    js_url = robot.brain.get 'js_url'
+    client = new jobscheduler({url: js_url});
+    client.jobchain.start {jobchain: jobchainname},(err, res, result)->
+      if result.answer.ok
+        msg.send "OK: start jobchain #{jobchainname}"
+      else
+        msg.send "Error: #{result.answer.ERROR.$.text}"
 
