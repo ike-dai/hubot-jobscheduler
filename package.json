@@ -1,9 +1,9 @@
 {
   "name": "hubot-jobscheduler",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Hubot script for opration to JobScheduler",
   "dependencies": {
-    "node-jobscheduler": ">0.0.0"
+    "jobscheduler": ">0.0.0"
   },
   "main": "index.coffee",
   "repository" : {

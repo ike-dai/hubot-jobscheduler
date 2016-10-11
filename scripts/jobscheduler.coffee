@@ -1,4 +1,4 @@
-jobscheduler = require('node-jobscheduler');
+jobscheduler = require('jobscheduler');
 
 module.exports = (robot) ->
   robot.respond /set url (\S*)/i, (msg) ->
