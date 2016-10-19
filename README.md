@@ -6,11 +6,15 @@ This is [JobScheuler](http://www.sos-berlin.com/jobscheduler) collaboration hubo
 
 ## Supported hubot command
 
-* hubot set url <JOC url> 
+* hubot set url <JOC url e.g. http://hostname:4444>
     * This command should be executed at first.
     * URL is set on hubot brain
-* hubot start job <job name>
+* hubot start job <Job name>
     * This command execute JobScheduler job
+* hubot start jobchain <JobChain name>
+    * This command execute JobScheduler JobChain
+* hubot disable job <Job name> for <seconds>sec
+    * Disable job. And enable job after xx seconds
 
 ## Supported JobScheduler version
 

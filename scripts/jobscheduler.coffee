@@ -11,7 +11,7 @@
 #  hubot set url <JOC url e.g. http://hostname:4444> - set JOC url for operating JobScheduler API
 #  hubot start job <Job name> - start job immediately
 #  hubot start jobchain <JobChain name> - start jobchain immediately
-#  hubot disable job <Job name> for <seconds>sec
+#  hubot disable job <Job name> for <seconds>sec - disable job. And enable job after xx seconds
 #
 # Author:
 #  ike-dai(Daisuke Ikeda)
